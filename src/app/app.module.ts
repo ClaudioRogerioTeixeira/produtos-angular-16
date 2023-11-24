@@ -16,6 +16,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { InputComponent } from './shared/input/input.component';
+import { MonetarioComponent } from './shared/monetario/monetario.component';
+import { NumeralComponent } from './shared/numeral/numeral.component';
+import { BotaoComponent } from './shared/botao/botao.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +33,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule,
     MatButtonModule,
     MatCardModule,
     MatTableModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    InputComponent,
+    MonetarioComponent,
+    NumeralComponent,
+    BotaoComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
